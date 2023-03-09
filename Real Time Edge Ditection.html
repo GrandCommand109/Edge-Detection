@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>
+            Real Time Edge Detection with OpenCV.js
+        </Title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>This is edge ditection 1</h1>
+        <video id="video" playsinline autoplay></video>
+        <div>
+            <canvas class="canva" id = "streamCanvas"></canvas>
+            <canvas id = "edgeDetectionCanvas"></canvas>
+        </div>
+        <div class="rangeslider">
+            <input type="range" min="0" max="500" value="2" class="myslider" id="0SliderRange">
+            <p id="demo0" type="range"></p>
+            <input type="range" min="0" max="500" value="1" class="myslider" id="1SliderRange">
+            <p id="demo1" type="range" ></p>
+        </div>
+        
+        <script type="text/javascript" src="openCV.js"></script>
+        
+        <script type="text/javascript" src="edgeDetection.js"></script>
+    </body>
+</html>
